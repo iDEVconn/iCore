@@ -1,0 +1,15 @@
+{
+  "name": "client",
+  "root": "apps/client",
+  "sourceRoot": "apps/client/src",
+  "targets": {
+    "dev": {
+      "command": "npx vite",
+      "options": { "cwd": "apps/client" }
+    },
+    "build": {
+      "command": "npx tsc -b && npx vite build",
+      "options": { "cwd": "apps/client" }
+    }
+  }
+}

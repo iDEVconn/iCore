@@ -1,0 +1,15 @@
+{
+  "name": "api",
+  "root": "apps/api",
+  "sourceRoot": "apps/api/src",
+  "targets": {
+    "dev": {
+      "command": "npx nest start --watch",
+      "options": { "cwd": "apps/api" }
+    },
+    "build": {
+      "command": "npx nest build",
+      "options": { "cwd": "apps/api" }
+    }
+  }
+}

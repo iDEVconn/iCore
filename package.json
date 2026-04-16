@@ -1,0 +1,21 @@
+{
+  "name": "icore",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "libs/*"
+  ],
+  "scripts": {
+    "dev": "nx run-many -t dev",
+    "dev:client": "nx run client:dev",
+    "dev:api": "nx run api:dev",
+    "build": "nx run-many -t build",
+    "lint": "nx run-many -t lint",
+    "test": "nx run-many -t test"
+  },
+  "devDependencies": {
+    "nx": "22.6.5",
+    "typescript": "^5"
+  }
+}
